@@ -100,7 +100,7 @@ for (i in 1:nrow(mgt_datafram)){
   mgt_datafram$Area_ha[i]=outdata_hru_STAN$AREAkm2[outdata_hru_STAN$GIS==mgt_datafram$HRU_number[i]][1]*100
 }
 #----------------------------------------Step 4------------------------------------------
-#source("https://raw.githubusercontent.com/Rojakaveh/SWAT_DAIRY/main/Autodairymodel.R")
+source("https://raw.githubusercontent.com/Rojakaveh/SWAT_DAIRY/main/Autodairymodel.R")
 
 Dairy_farm_input= function(numberofbarn){
   if(missing(numberofbarn)){
